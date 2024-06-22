@@ -1,0 +1,90 @@
+<!DOCTYPE.html>
+<html lang="pt-br">
+	<head>
+		<title>Descobrindo a França- Guia completo do país da Gastronomia e da Moda</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Nataly M. dos Santos">
+		<meta name="description" content=" França - Guia completo">
+		<meta name="keywords" content="Guia, paris, frança, torre, eiffel, moda, gastronomia, guia, frances">
+		<meta http-equiv="refresh" content="120">
+		<link rel="stylesheet" type="text/css" href="estilo.css"> 
+		<script language="Javascript" type="text/javascript">
+			function validar() {
+				var vnome = form1.name.value; 
+				var vemail = form1.email.value; 
+				var vtel = form1.phone.value;
+				
+				if(vnome ==""){
+					alert("Preencha o campo vazio com seu nome");
+					form1.name.focus();
+					return false;
+				}
+				if(vnome.length<3){
+					alert("Digite seu nome completo");
+					form1.name.focus();
+					return false;
+				}
+				if(vemail ==""){
+					alert("Preencha o campo vazio com seu email");
+					form1.email.focus();
+					return false;
+				}
+				
+				if(vtel ==""){
+					alert("Preencha o campo com seu telefone e no modelo exigido");
+					form1.phone.focus();
+					return false;
+				}
+				}
+		</script>
+		<link rel="icon" type="image/jpg" href="img/frances.png">
+	</head>
+	<body>
+		<center>
+		<font face="Century Gothic">
+		<hr>
+		<div id="all">
+			<ul class="menu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="sobre.html">Sobre</a></li>
+				<li><a href="cultura.html">Cultura</a></li>
+				<li><a href="gastronomia.html">Gastronomia</a></li>
+				<li><a href="curiosidades.html">Curiosidades</a></li>
+				<li><a href="bibliografia.html">Bibliografia</a></li>
+				<li><a href="contato.html">Contato</a></li>
+			</ul>
+		</div>
+		<hr><br><br><br>
+		<h1>Preencha os dados no campo abaixo:</h1> 
+		<center><form name="form1" method="post" action="confirmaçaodedados.html">
+			Nome:<input id="name" type="text" size="60" placeholder="Campo obrigatório! Preencha aqui seu nome!" required name= "name" /><br><br>
+			Email:<input type="email" required="required" size="60" class="input-text"  placeholder="Campo obrigatório! Preencha aqui seu email!" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/> <br><br>
+			Telefone:<input type="tel" required="required" size="58 maxlength="15" name="phone" placeholder="(**)*****-****" pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$" /><br>
+			Dê uma nota para o site: <select>
+			<option>0
+			<option>1
+			<option>2
+			<option>3
+			<option>4
+			<option>5
+			<option>6
+			<option>7
+			<option>8
+			<option>9
+			<option>10
+			</select><br><br>
+			Deixe seu comentário:<br>
+			<textarea cols="60" rows="10" name= "comentário"></textarea>
+			<br><br>
+			<input type="submit" onclick="return validar()">
+			<input type="reset" value="Cancelar">
+		</form></center>
+		
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><hr>
+		<h5> Nataly M. dos Santos 2024- &copyTodos os direitos reservados
+		<br> 
+		Trabalho acadêmico sem fins lucrativos</h5></center>
+		<div align="right"><a href="#"><img src="img/image-removebg-preview (13).png" width="2.5%"></a></div>
+	</body>
+</html>
